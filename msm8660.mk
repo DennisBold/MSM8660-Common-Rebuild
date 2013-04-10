@@ -9,8 +9,13 @@ PRODUCT_PACKAGES += HoloSpiralWallpaper
 PRODUCT_PACKAGES += MagicSmokeWallpapers
 PRODUCT_PACKAGES += NoiseField
 PRODUCT_PACKAGES += PhaseBeam
-#fstab.msm8660
-PRODUCT_PACKAGES += fstab.msm8660
+
+# fstab.msm8660
+# PRODUCT_PACKAGES += fstab.msm8660
+ifeq ($(PRODUCT_DEVICE), pyramid)
+PRODUCT_PACKAGES += fstab.pyramid
+endif
+
 # Bluetooth configuration files
 PRODUCT_COPY_FILES += \
     system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf \
