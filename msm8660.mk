@@ -12,7 +12,7 @@ PRODUCT_PACKAGES += PhaseBeam
 
 # fstab.msm8660
 # PRODUCT_PACKAGES += fstab.msm8660
-ifeq ($(PRODUCT_DEVICE), pyramid)
+ifeq ($(TARGET_PRODUCT), pyramid)
 PRODUCT_PACKAGES += fstab.pyramid
 endif
 
