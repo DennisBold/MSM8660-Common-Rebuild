@@ -42,7 +42,7 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_USES_UNCOMPRESSED_KERNEL := false
 TARGET_USES_LAUNCHER_V1 := true
 
-BOARD_EGL_CFG := device/htc/$(TARGET_PRODUCT)/egl.cfg
+BOARD_EGL_CFG := device/htc/$(TARGET_PRODUCT)/scripts/egl.cfg
 
 # Use signed boot and recovery image
 TARGET_BOOTIMG_SIGNED := true
